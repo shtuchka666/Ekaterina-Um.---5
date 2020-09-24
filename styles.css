@@ -1,0 +1,124 @@
+.menu{
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: auto;
+  align-items: center;
+}
+.menu__item{
+  text-decoration: none;
+  color:black;
+}
+.menu__item:hover{
+  opacity: .5;
+  text-decoration: underline;
+}
+.burger {
+  display: none;
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  margin-top: 30px;
+  margin-left: 15px;
+  background-color: transition;
+  border: none;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: 0.6s;
+}
+.hidden-menu-ticker {
+  display: none;
+}
+@media (max-width: 480px){
+  .menu__item{
+    display: none;
+  }
+  .burger {
+    background-color: black;
+  }
+  .burger:before {
+    position: absolute;
+    content: '';
+    margin-top: 10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  .burger:after {
+    position: absolute;
+    content: '';
+    margin-top: 20px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+}
+@media (min-width: 481px) and (max-width: 640px) {
+  .burger {
+    background-color: black;
+  }
+  .burger:before {
+    position: absolute;
+    content: '';
+    margin-top: 10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  .burger:after {
+    position: absolute;
+    content: '';
+    margin-top: 20px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  .menu{
+    position: absolute;
+    margin-top: -50%;
+    margin-left: 0%;
+    display: block;
+    width: 40%;
+    height: 100%;
+    transition: left .2s;
+  }
+  .menu__item{
+    display: block;
+    font-size:25px;
+    padding-top: 20px;
+  }
+}
+@media (min-width: 641px) and (max-width: 960px) {
+  .menu__item{
+    font-size: 25px;
+  }
+}
+@media (min-width: 961px) and (max-width: 1024px) {
+  .menu__item{
+    font-size: 35px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .menu__item{
+    font-size: 40px;
+  }
+}
+@media (min-width: 1281px) {
+  .menu__item{
+    font-size: 50px;
+  }
+}
